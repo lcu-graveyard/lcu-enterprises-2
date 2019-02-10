@@ -17,7 +17,7 @@
     "pack:main": "concat-glob-cli -f \"dist/lcu/main.*.js\" -o dist/wc/lcu/lcu.1.js",
     "pack:pollyfills": "concat-glob-cli -f \"dist/lcu/scripts.*.js\" -o dist/wc/lcu/lcu.0.js",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "npm run build:common && npm run build:lcu",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
